@@ -19,6 +19,13 @@ npx prisma init
 npm install @prisma/client
 
 npx prisma migrate dev --name create_name_schema
+npx prisma migrate dev --name add_webex_phone_numbers
+
+
+npm install joi
+npm install winston
+npm install axios node-cron
+
 
 
 **run**

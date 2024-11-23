@@ -20,3 +20,24 @@ model User {
   password   String?
   created_at DateTime  @default(now())
 }
+
+model WebexPhoneNumber {
+  id                     Int      @id @default(autoincrement())
+  phoneNumber            String?
+  extension              String?
+  esn                    String?
+  state                  String?
+  phoneNumberType        String?
+  mainNumber             Boolean?
+  includedTelephonyTypes String?
+  tollFreeNumber         Boolean?
+  locationId             String?
+  locationName           String?
+  ownerId                String?
+  ownerType              String?
+  ownerFirstName         String?
+  ownerLastName          String?
+  isServiceNumber        Boolean?
+  createdAt              DateTime @default(now())
+}
+
