@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cron from "node-cron";
 import router from "./routes/index.js";
-import { fetchWebexData } from "./services/webexService.js";
+import { fetchWebexData, getOrganizationNumbers } from "./services/webexService.js";
 
 dotenv.config();
 
@@ -17,7 +17,8 @@ app.use(router);
 (async () => {
   try {
     console.log("Running initial Webex data sync...");
-    await fetchWebexData();
+    // await fetchWebexData();
+    await getOrganizationNumbers();
   } catch (error) {
     console.error("Failed to sync Webex data on app startup:", error.message);
   }
