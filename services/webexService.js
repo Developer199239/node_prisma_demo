@@ -69,6 +69,7 @@ export const fetchWebexData = async (orgId) => {
           ownerFirstName: item.owner?.firstName,
           ownerLastName: item.owner?.lastName,
           isServiceNumber: item.isServiceNumber,
+          orgId,
         })),
       });
     });

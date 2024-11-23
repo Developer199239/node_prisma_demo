@@ -39,5 +39,6 @@ model WebexPhoneNumber {
   ownerLastName          String?
   isServiceNumber        Boolean?
   createdAt              DateTime @default(now())
+  orgId                  String   @default("default-org-id")
 }
 

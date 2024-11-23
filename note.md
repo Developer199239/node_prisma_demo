@@ -20,6 +20,8 @@ npm install @prisma/client
 
 npx prisma migrate dev --name create_name_schema
 npx prisma migrate dev --name add_webex_phone_numbers
+**after add new field orgId**
+npx prisma migrate dev --name add_orgId_to_webex_phone_number
 
 
 npm install joi
